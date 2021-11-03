@@ -7,7 +7,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(function(){
-
+            $('#vnav button').click(function() {
+                let target = $(this).data().scrollto;
+                let os = $('#' + target).offset().top;
+                console.log(os);
+                $('body').animate({
+                    scrollTop: os
+                });
+            });
         });
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
@@ -67,7 +74,7 @@
             right: 0;
             top: 200px;
             background-color: rgba(0, 0, 0, 0.5);
-            height: 100px;
+            height: 150px;
             width: 25px;
             display: flex;
             flex-direction: column;
@@ -93,13 +100,14 @@
     <div class="container">
 
         <nav id="vnav">
-            <button data-scrollto="titolo"><i class="fas fa-circle"></i></button>
-            <button data-scrollto="blocchi"><i class="fas fa-circle"></i></button>
-            <button data-scrollto="s1"><i class="fas fa-circle"></i></button>
-            <button data-scrollto="s2"><i class="fas fa-circle"></i></button>
-            <button data-scrollto="s3"><i class="fas fa-circle"></i></button>
-            <button data-scrollto="s3"><i class="fas fa-circle"></i></button>
-            <button data-scrollto="s3"><i class="fas fa-circle"></i></button>
+            <button data-scrollto="b1"><i class="fas fa-circle"></i></button>
+            <button data-scrollto="b2"><i class="fas fa-circle"></i></button>
+            <button data-scrollto="b3"><i class="fas fa-circle"></i></button>
+            <button data-scrollto="b4"><i class="fas fa-circle"></i></button>
+            <button data-scrollto="b5"><i class="fas fa-circle"></i></button>
+            <button data-scrollto="b6"><i class="fas fa-circle"></i></button>
+            <button data-scrollto="b7"><i class="fas fa-circle"></i></button>
+
         </nav>
         <div class="img-container">
             <img src="https://images.unsplash.com/photo-1533406494543-e6cf6430f44a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" />
