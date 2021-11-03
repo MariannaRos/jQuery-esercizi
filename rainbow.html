@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-08" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+
+        });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Primo esempio JQuery</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .block {
+            height: 400px;
+            width: 100%;
+        }
+        
+        #b1 {
+            background-color: #240735
+        }
+        
+        #b2 {
+            background-color: #06315a;
+        }
+        
+        #b3 {
+            background-color: #0f5392;
+        }
+        
+        #b4 {
+            background-color: #097020;
+        }
+        
+        #b5 {
+            background-color: #e2d40d;
+        }
+        
+        #b6 {
+            background-color: orangered;
+        }
+        
+        #b7 {
+            background-color: red;
+        }
+        
+        .img-container {
+            width: 870px;
+            height: 580px;
+            margin: 0 auto;
+        }
+        
+        img {
+            margin: 0 auto;
+        }
+        
+        #vnav {
+            position: fixed;
+            right: 0;
+            top: 200px;
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 100px;
+            width: 25px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #vnav button {
+            font-size: xx-small;
+            display: block;
+            text-align: center;
+            padding: 3px;
+            color: white;
+            flex: 1 1 10px;
+            background-color: transparent;
+            border: none;
+        }
+    </style>
+    <script>
+        
+    </script>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav id="vnav">
+            <button data-scrollto="titolo"><i class="fas fa-circle"></i></button>
+            <button data-scrollto="blocchi"><i class="fas fa-circle"></i></button>
+            <button data-scrollto="s1"><i class="fas fa-circle"></i></button>
+            <button data-scrollto="s2"><i class="fas fa-circle"></i></button>
+            <button data-scrollto="s3"><i class="fas fa-circle"></i></button>
+            <button data-scrollto="s3"><i class="fas fa-circle"></i></button>
+            <button data-scrollto="s3"><i class="fas fa-circle"></i></button>
+        </nav>
+        <div class="img-container">
+            <img src="https://images.unsplash.com/photo-1533406494543-e6cf6430f44a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" />
+        </div>
+        <div class="block" id="b1"></div>
+        <div class="block" id="b2"></div>
+        <div class="block" id="b3"></div>
+        <div class="block" id="b4"></div>
+        <div class="block" id="b5"></div>
+        <div class="block" id="b6"></div>
+        <div class="block" id="b7"></div>
+        <div class="block news" id="b8">
+            <ul id="lista"></ul>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
